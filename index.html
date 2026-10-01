@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hot Wheels - Distance Edition ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PANTALLA DE INICIO
+    ========================== -->
+
+    <section id="inicio" class="pantalla">
+<h2>FELIZ DIA DE LOS CARRITOS </h2>
+        <div class="logo">
+            HOT WHEELS
+        </div>
+<h2> MI VIDA</h2>
+        
+
+        <p class="subtitulo">
+            Amor mio, sin dudar eres la mejor persona<br>
+             del mundo nunca dudes del gran amor que te tengo.❤️
+             <h2>ERES MI PERSONA FAVORITA</h2>
+             Quiero agradecerte por estar en mi vida.
+             <h2>TE AMO MUCHO</h2>
+        </p>
+
+        <div class="pista">
+
+            <div class="auto auto-inicio">
+                <img src="img/negro.png" alt="Hot Wheels negro">
+            </div>
+
+            <div class="lineas-pista"></div>
+
+        </div>
+
+        <button class="btn-principal" onclick="comenzar()">
+            🏁 COMENZAR
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         GARAGE
+    ========================== -->
+
+    <section id="garage" class="pantalla oculto">
+
+        <div class="logo logo-pequeno">
+            HOT WHEELS
+        </div>
+
+        <h1>
+            🏎️ LEELO CUANDO:
+        </h1>
+
+        <p class="bienvenida">
+            Bienvenido a un pequeño lugar
+            que hice para ti.<br>
+            Espero que cada vez que abras este pequeño detalle<br>
+            puedas sentir, aunque sea un poquito, todo el amor <br>
+            que puse en cada palabra.❤️
+        </p>
+
+
+        <!-- AUTOS -->
+
+        <div class="autos-garage">
+
+            <div class="auto-garage auto1">
+                <img src="img/sol.png" alt="Hot Wheels amarillo">
+            </div>
+
+            <div class="auto-garage auto2">
+                <img src="img/azul.png" alt="Hot Wheels azul">
+            </div>
+
+        </div>
+
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+
+            <button onclick="mostrarMensaje('extrañes')">
+                <span>💗</span>
+                <br>
+                Cuando me extrañes
+            </button>
+
+            <button onclick="mostrarMensaje('triste')">
+                <span>🥺</span>
+                <br>
+                Cuando estés triste
+            </button>
+
+            <button onclick="mostrarMensaje('reir')">
+                <span>❤️</span>
+                <br>
+                Cuando necesites reír
+            </button>
+
+            <button onclick="mostrarMensaje('amor')">
+                <span>❤️</span>
+                <br>
+                Cuando quieras saber
+                cuánto te amo
+            </button>
+
+            <button onclick="mostrarMensaje('historia')">
+                <span>🏁</span>
+                <br>
+                Nuestra historia
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PANTALLA DE MENSAJE
+    ========================== -->
+
+    <section id="mensajePantalla" class="pantalla oculto">
+
+        <!-- AUTO DEL MENSAJE -->
+
+        <div class="auto-carta">
+            <img
+                id="autoCarta"
+                src="img/rojo.png"
+                alt="Hot Wheels">
+        </div>
+
+
+        <!-- CARTA -->
+
+        <div class="carta">
+
+            <div id="contenidoMensaje"></div>
+
+        </div>
+
+
+        <!-- BOTONES DE NAVEGACIÓN -->
+
+        <div class="navegacion">
+
+            <button
+                class="btn-volver"
+                onclick="volverGarage()">
+                ↩️ Volver al Garage
+            </button>
+
+            <button
+                class="btn-inicio"
+                onclick="volverInicio()">
+                🏠 Volver al Inicio
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
